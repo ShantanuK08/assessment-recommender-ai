@@ -89,6 +89,25 @@ assessment-recommender-ai/
 
 ---
 
+## Evaluation
+
+The system was evaluated using representative multi-turn hiring conversations covering the required workflows:
+
+- Clarification for incomplete hiring requirements
+- Assessment recommendation
+- Recommendation refinement when user constraints changed
+- Assessment comparison
+- Off-topic request handling
+
+Evaluation focused on:
+
+- Retrieval Quality – verifying that FAISS retrieved relevant SHL catalog entries.
+- Recommendation Relevance – ensuring returned assessments matched the hiring requirements.
+- Groundedness – confirming recommendations referenced only products present in the processed SHL catalog.
+- Conversation Accuracy – validating correct workflow transitions (clarify → recommend → refine → compare).
+
+Testing was performed using multiple conversation scenarios derived from the SHL assignment requirements.
+
 ## Conversation Workflow
 
 The agent supports five workflows:
